@@ -1,0 +1,38 @@
+{
+  "notebooks": [
+    {
+      "title": "🧐 LLM AutoEval",
+      "description": "Evaluate your LLMs automatically using RunPod",
+      "category": "Tools",
+      "tags": [
+        "llm"
+      ],
+      "lastUpdated": "2025-01-18",
+      "colabLink": "https://colab.research.google.com/drive/1Igs3WZuXAIv9X0vwqiE90QlEPys8e8Oa?usp=sharing",
+      "articleLink": ""
+    },
+    {
+      "title": "⚡ AutoQuant",
+      "description": "Quantize LLMs into GGUF, GPTQ formats in one click",
+      "category": "Tools",
+      "tags": [
+        "quantization",
+        "llm"
+      ],
+      "lastUpdated": "2025-01-18",
+      "colabLink": "https://colab.research.google.com/drive/1b6nqC7UZVt8bx4MksX7s656GXPM-eWw4?usp=sharing",
+      "articleLink": ""
+    },
+    {
+      "title": "Fine-tune Llama 3.1 with Unsloth",
+      "description": "Perform ultra-efficient fine-tuning in Colab",
+      "category": "Fine-tuning",
+      "tags": [
+        "fine-tuning"
+      ],
+      "lastUpdated": "2025-01-18",
+      "articleLink": "https://originshq.com/blog/fine-tune-llama-3-1/",
+      "colabLink": "https://colab.research.google.com/drive/164cg_O7SV7G8kZr_JXqLd6VC7pd86-1Z?usp=sharing"
+    }
+  ]
+}

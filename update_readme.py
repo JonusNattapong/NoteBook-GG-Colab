@@ -14,12 +14,15 @@ def generate_readme_content(data):
     
     # Add notebooks table
     content.append("## Available Notebooks\n")
-    content.append("| Title | Category | Description | Last Updated | Colab Link |")
-    content.append("|-------|----------|-------------|--------------|------------|")
+    content.append("| Title | Category | Description | Last Updated | Article | Colab |")
+    content.append("|-------|----------|-------------|--------------|---------|-------|")
     
     for notebook in data['notebooks']:
         # Create Colab badge
         colab_badge = f"[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({notebook['colabLink']})"
+        
+        # Create article link
+        article_link = f"[Article]({notebook['articleLink']})" if notebook['articleLink'] else ""
         
         # Add row to table
         row = [
@@ -27,6 +30,7 @@ def generate_readme_content(data):
             notebook['category'],
             notebook['description'],
             notebook['lastUpdated'],
+            article_link,
             colab_badge
         ]
         content.append(f"| {' | '.join(row)} |")
@@ -44,6 +48,8 @@ def generate_readme_content(data):
         content.append(f"\n### {category}")
         for notebook in notebooks:
             content.append(f"- {notebook['title']}")
+            if notebook['articleLink']:
+                content.append(f"  - Article: [{notebook['title']}]({notebook['articleLink']})")
             content.append(f"  - Tags: {', '.join(notebook['tags'])}")
     
     # Add footer
